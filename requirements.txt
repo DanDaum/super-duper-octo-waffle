@@ -1,1 +1,4 @@
-wheel==0.45.1
+Flask==2.3.2
+Flask-Cors==3.0.10
+pandas==2.0.3
+sec_api==1.0.32
