@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>App Support</title>
+    <meta name="description" content="Support page for our iOS app. Contact us, get help, and share feedback." />
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 40px;
+        line-height: 1.55;
+        max-width: 900px;
+      }
+      header { margin-bottom: 18px; }
+      h1 { margin-bottom: 6px; }
+      .muted { opacity: 0.8; margin-top: 0; }
+      .card {
+        border: 1px solid rgba(127,127,127,0.25);
+        border-radius: 12px;
+        padding: 18px;
+        margin: 16px 0;
+      }
+      a { text-underline-offset: 3px; }
+      code {
+        padding: 2px 6px;
+        border-radius: 6px;
+        background: rgba(127,127,127,0.12);
+      }
+      ul { padding-left: 1.25rem; }
+      .btn {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(127,127,127,0.35);
+        text-decoration: none;
+      }
+      footer { margin-top: 28px; opacity: 0.8; font-size: 0.95rem; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Support</h1>
+      <p class="muted">
+        Thanks for visiting our support page. We appreciate you using the app and we’re committed to keeping it reliable, accurate, and up to date.
+      </p>
+    </header>
+
+    <section class="card" aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>
+        If you need help, spot an issue, or want to share feedback, email us anytime:
+      </p>
+
+      <!-- Replace support@example.com with your real support email -->
+      <p>
+        <a class="btn" href="mailto:support@example.com?subject=App%20Support%20Request">
+          Email Support
+        </a>
+      </p>
+
+      <p class="muted">
+        Prefer copying the address? <code>support@example.com</code>
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="feedback">
+      <h2 id="feedback">Feedback &amp; Updates</h2>
+      <p>
+        Thank you for any feedback—positive or critical. It helps us prioritize fixes and improvements.
+        We regularly ship updates to improve performance, polish the experience, and address bugs.
+      </p>
+      <ul>
+        <li><strong>Bug reports:</strong> Tell us what happened and what you expected.</li>
+        <li><strong>Feature requests:</strong> Tell us what you’re trying to accomplish.</li>
+        <li><strong>Device info (optional):</strong> iPhone/iPad model and iOS version can help reproduce issues.</li>
+      </ul>
+      <p class="muted">
+        Please avoid sending sensitive personal information in email.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="tips">
+      <h2 id="tips">Quick Tips</h2>
+      <ul>
+        <li>Make sure you’re on the latest app version from the App Store.</li>
+        <li>Try closing and reopening the app if something looks stuck.</li>
+        <li>Restarting your device can resolve some temporary issues.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="privacy">
+      <h2 id="privacy">Privacy</h2>
+      <p>
+        We take privacy seriously. If you’re looking for our privacy policy, you can link it here:
+      </p>
+      <!-- Replace privacy.html with your hosted privacy policy URL/path -->
+      <p><a href="privacy.html">View Privacy Policy</a></p>
+    </section>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Your App Name. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
